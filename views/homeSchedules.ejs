@@ -1,0 +1,20 @@
+<h2>All schedules</h2>
+
+<table>
+  <tr>
+    <th>Username</th>
+    <th>Day no.</th>
+    <th>Start at</th>
+    <th>End at</th>
+  </tr>
+  <% for(let index = 0; index < schedules.length; index++) { %>
+  <tr>
+    <td><%= schedules[index].userName %></td>
+    <td><%= schedules[index].day %></td>
+    <td><%= schedules[index].start_at %></td>
+    <td><%= schedules[index].end_at %></td>
+  </tr>
+  <% } %>
+</table>
+
+<button><a href='/new'>New schedule</a></button>
